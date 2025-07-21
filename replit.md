@@ -1,12 +1,14 @@
-# Stock Scoring Platform
+# InvestIQ - Smart Stock Analysis Platform
 
 ## Overview
 
-This is a stock scoring platform built with React and Express, designed to analyze and rank Nifty 50 companies using configurable scoring algorithms. The application provides a comprehensive dashboard for viewing company rankings, detailed analyses, and customizable scoring parameters.
+InvestIQ is a modern stock scoring platform built with React and Express, designed to analyze and rank Nifty 50 companies using configurable scoring algorithms. The application features an elegant gradient-based design with glassmorphism effects and provides a comprehensive dashboard for viewing company rankings, detailed analyses, and customizable scoring parameters.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Design preferences: Modern, appealing visual design with gradient backgrounds and glassmorphism effects.
+Branding: "InvestIQ" with a smart logo combining TrendingUp and BarChart icons.
 
 ## System Architecture
 
@@ -36,11 +38,11 @@ The application uses a modern full-stack approach with:
 ## Key Components
 
 ### Frontend Components
-- **Header**: Navigation and settings access
-- **CompanyCard**: Individual company display with scoring information
-- **RankingTable**: Paginated table of all companies with filtering
-- **ScoreChart**: Detailed scoring breakdown visualization
-- **SettingsPanel**: Configurable scoring weights interface
+- **Header**: Modern gradient header with InvestIQ branding and logo
+- **CompanyCard**: Individual company display with enhanced hover effects
+- **RankingTable**: Paginated table with glassmorphism design and filtering
+- **ScoreChart**: Detailed scoring breakdown with gradient card styling
+- **SettingsPanel**: Enhanced settings interface with gradient preset cards
 
 ### Backend Structure
 - **Express Server**: RESTful API endpoints (currently minimal setup)
@@ -73,11 +75,11 @@ The application uses a modern full-stack approach with:
 ## External Dependencies
 
 ### Frontend Libraries
-- **UI Components**: Radix UI primitives with shadcn/ui styling
+- **UI Components**: Radix UI primitives with shadcn/ui styling and custom gradient themes
 - **Data Visualization**: Recharts for financial charts and graphs
 - **Form Handling**: React Hook Form with Zod validation
 - **Routing**: Wouter for lightweight client-side routing
-- **Styling**: Tailwind CSS with custom financial dashboard theme
+- **Styling**: Tailwind CSS with gradient backgrounds, glassmorphism effects, and modern card designs
 
 ### Backend Dependencies
 - **Database**: Neon Database (serverless PostgreSQL)
@@ -110,5 +112,16 @@ The application uses a modern full-stack approach with:
 - **Database URL**: Required environment variable for PostgreSQL
 - **Build Scripts**: Separate build processes for client and server
 - **Process Management**: Node.js production server with proper error handling
+
+## Recent Changes
+
+### January 2025 - Visual Design Overhaul
+- Rebranded platform as "InvestIQ" with professional logo design
+- Implemented gradient backgrounds and glassmorphism design system
+- Enhanced header with blue-to-purple gradient and backdrop blur effects
+- Updated summary cards with individual gradient themes (blue, emerald, amber, purple)
+- Applied consistent shadow-xl and backdrop-blur styling across all components
+- Improved hover states and micro-interactions for better user experience
+- Fixed console warnings related to DOM nesting validation
 
 The application is designed to be easily deployable on platforms like Replit, with built-in support for development tooling and production optimization.

@@ -33,8 +33,8 @@ export function RankingTable({ companies, onCompanyClick }: RankingTableProps) {
   };
 
   return (
-    <Card className="overflow-hidden">
-      <CardHeader className="border-b border-slate-200">
+    <Card className="overflow-hidden shadow-xl border-0 bg-white/90 backdrop-blur-sm">
+      <CardHeader className="border-b border-slate-200 bg-gradient-to-r from-slate-50 to-blue-50">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
           <div>
             <CardTitle className="text-lg font-semibold text-slate-900">Nifty 50 Rankings</CardTitle>

@@ -27,8 +27,8 @@ export function ScoreChart({ company }: ScoreChartProps) {
 
   return (
     <div className="space-y-6">
-      <Card>
-        <CardHeader>
+      <Card className="shadow-xl border-0 bg-white/90 backdrop-blur-sm">
+        <CardHeader className="bg-gradient-to-r from-slate-50 to-blue-50">
           <CardTitle className="text-lg font-semibold">Score Breakdown</CardTitle>
         </CardHeader>
         <CardContent>
@@ -95,8 +95,8 @@ export function ScoreChart({ company }: ScoreChartProps) {
         </CardContent>
       </Card>
 
-      <Card>
-        <CardHeader>
+      <Card className="shadow-xl border-0 bg-white/90 backdrop-blur-sm">
+        <CardHeader className="bg-gradient-to-r from-slate-50 to-blue-50">
           <CardTitle className="text-lg font-semibold">Score History (6 Months)</CardTitle>
         </CardHeader>
         <CardContent>

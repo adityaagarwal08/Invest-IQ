@@ -53,7 +53,7 @@ export function CompanyCard({ company, onClick }: CompanyCardProps) {
   };
 
   return (
-    <tr className="hover:bg-slate-50 cursor-pointer transition-colors" onClick={onClick}>
+    <tr className="hover:bg-blue-50/50 cursor-pointer transition-all duration-200 hover:shadow-sm" onClick={onClick}>
       <td className="px-6 py-4 whitespace-nowrap">
         <div className="flex items-center">
           <div className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 ${

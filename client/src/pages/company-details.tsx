@@ -54,7 +54,7 @@ export default function CompanyDetails() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="flex items-center justify-between mb-6">
           <Button variant="ghost" onClick={() => setLocation("/")}>
@@ -64,7 +64,7 @@ export default function CompanyDetails() {
         </div>
 
         {/* Company Header */}
-        <Card className="mb-6">
+        <Card className="mb-6 shadow-xl border-0 bg-white/90 backdrop-blur-sm">
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-4">
@@ -75,13 +75,13 @@ export default function CompanyDetails() {
                 </div>
                 <div>
                   <h1 className="text-2xl font-bold text-slate-900">{company.name}</h1>
-                  <p className="text-slate-600 mt-1 flex items-center space-x-2">
+                  <div className="text-slate-600 mt-1 flex items-center space-x-2">
                     <span>{company.symbol}</span>
                     <span>•</span>
                     <Badge className={getSectorColor(company.sector)}>
                       {company.sector}
                     </Badge>
-                  </p>
+                  </div>
                 </div>
               </div>
               <div className="text-right">
@@ -105,8 +105,8 @@ export default function CompanyDetails() {
           {/* Metrics Cards */}
           <div className="space-y-6">
             {/* Fundamental Ratios Card */}
-            <Card>
-              <CardHeader>
+            <Card className="shadow-xl border-0 bg-white/90 backdrop-blur-sm">
+              <CardHeader className="bg-gradient-to-r from-slate-50 to-blue-50">
                 <CardTitle className="text-lg font-semibold flex items-center">
                   <Calculator className="mr-2 h-5 w-5 text-primary" />
                   Fundamental Ratios
@@ -186,8 +186,8 @@ export default function CompanyDetails() {
             </Card>
 
             {/* Shareholder Pattern Card */}
-            <Card>
-              <CardHeader>
+            <Card className="shadow-xl border-0 bg-white/90 backdrop-blur-sm">
+              <CardHeader className="bg-gradient-to-r from-slate-50 to-blue-50">
                 <CardTitle className="text-lg font-semibold flex items-center">
                   <Users className="mr-2 h-5 w-5 text-primary" />
                   Shareholder Pattern
@@ -243,8 +243,8 @@ export default function CompanyDetails() {
             </Card>
 
             {/* Additional Info Card */}
-            <Card>
-              <CardHeader>
+            <Card className="shadow-xl border-0 bg-white/90 backdrop-blur-sm">
+              <CardHeader className="bg-gradient-to-r from-slate-50 to-blue-50">
                 <CardTitle className="text-lg font-semibold flex items-center">
                   <Info className="mr-2 h-5 w-5 text-primary" />
                   Quick Facts

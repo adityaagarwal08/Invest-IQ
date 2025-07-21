@@ -78,7 +78,7 @@ export function SettingsPanel({ open, onClose }: SettingsPanelProps) {
 
   return (
     <Dialog open={open} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto bg-white/95 backdrop-blur-sm border-0 shadow-2xl">
         <DialogHeader>
           <div className="flex items-center justify-between">
             <DialogTitle className="text-lg font-semibold">Configure Scoring Weights</DialogTitle>
@@ -93,22 +93,22 @@ export function SettingsPanel({ open, onClose }: SettingsPanelProps) {
           <div>
             <h4 className="text-sm font-medium text-slate-700 mb-3">Quick Presets</h4>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              <Card className="cursor-pointer hover:border-primary transition-colors" onClick={() => handlePreset('conservative')}>
+              <Card className="cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-200 bg-gradient-to-br from-blue-500 to-blue-600 border-0 text-white" onClick={() => handlePreset('conservative')}>
                 <CardContent className="p-3">
-                  <div className="font-medium text-slate-900">Conservative</div>
-                  <div className="text-sm text-slate-500">Focus on fundamentals & stability</div>
+                  <div className="font-medium">Conservative</div>
+                  <div className="text-sm text-blue-100">Focus on fundamentals & stability</div>
                 </CardContent>
               </Card>
-              <Card className="cursor-pointer hover:border-primary transition-colors" onClick={() => handlePreset('balanced')}>
+              <Card className="cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-200 bg-gradient-to-br from-emerald-500 to-emerald-600 border-0 text-white" onClick={() => handlePreset('balanced')}>
                 <CardContent className="p-3">
-                  <div className="font-medium text-slate-900">Balanced</div>
-                  <div className="text-sm text-slate-500">Equal weight to all factors</div>
+                  <div className="font-medium">Balanced</div>
+                  <div className="text-sm text-emerald-100">Equal weight to all factors</div>
                 </CardContent>
               </Card>
-              <Card className="cursor-pointer hover:border-primary transition-colors" onClick={() => handlePreset('growth')}>
+              <Card className="cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-200 bg-gradient-to-br from-purple-500 to-purple-600 border-0 text-white" onClick={() => handlePreset('growth')}>
                 <CardContent className="p-3">
-                  <div className="font-medium text-slate-900">Growth Focused</div>
-                  <div className="text-sm text-slate-500">Emphasize growth metrics</div>
+                  <div className="font-medium">Growth Focused</div>
+                  <div className="text-sm text-purple-100">Emphasize growth metrics</div>
                 </CardContent>
               </Card>
             </div>
