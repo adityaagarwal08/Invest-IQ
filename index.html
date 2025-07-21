@@ -3,9 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="description" content="Invest-IQ: Analyze and rank companies with smart scoring." />
+    <meta property="og:title" content="Invest-IQ" />
+    <meta property="og:description" content="Analyze and rank companies with smart scoring." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://adityaagarwal08.github.io/Invest-IQ" />
+    <meta property="og:image" content="/logo.png" />
+    <title>Invest-IQ</title>
+    <style>
+      #root { min-height: 100vh; }
+      .loading-msg { text-align: center; margin-top: 20vh; font-size: 1.5rem; color: #333; }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <noscript>
+      <div style="text-align:center; margin-top:20vh; color:red; font-size:1.2rem;">
+        JavaScript is required to run Invest-IQ. Please enable JavaScript in your browser.
+      </div>
+    </noscript>
+    <div id="root">
+      <div class="loading-msg">Loading Invest-IQ...</div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
     <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
     <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
